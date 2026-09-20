@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Pipit: Image Resizer</title>
+  <style>
+    :root {
+      --bg: #fbfdf9;
+      --text: #191c1b;
+      --text-muted: #5e6f66;
+      --surface: #ffffff;
+      --surface-subtle: #f0f4f0;
+      --primary: #236b54;
+      --primary-light: #e5f5ed;
+      --border: #e0e5e1;
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111413;
+        --text: #e1e3e0;
+        --text-muted: #89938d;
+        --surface: #191c1b;
+        --surface-subtle: #202422;
+        --primary: #9cd8bd;
+        --primary-light: #16382d;
+        --border: #2c322e;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: var(--font-stack);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 40px 20px 80px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      background-color: var(--primary-light);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      margin-top: 36px;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    ul {
+      margin: 0 0 16px 24px;
+      color: var(--text);
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .card {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--primary);
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Pipit · Image Resizer</div>
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        Last updated: September 20, 2026 · Effective date: September 20, 2026
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="card-title">Summary: Private by Design</div>
+      <p style="margin-bottom: 0;">
+        Pipit is built with a local-first philosophy. All image manipulation—including resizing, compression, cropping, and format conversion—occurs entirely on your physical device. We do not operate an image processing server and we never upload, store, or transmit your photos or their metadata to our servers.
+      </p>
+    </div>
+
+    <h2>1. Image Processing & Device-Only Operations</h2>
+    <p>
+      Pipit only accesses the specific images you choose via Android's system visual media picker or images you explicitly share to the application from other apps.
+    </p>
+    <ul>
+      <li><strong>On-device processing:</strong> Image decoding, resizing, compression algorithms, and format encoding run locally on your device's processor and memory.</li>
+      <li><strong>No photo uploads:</strong> Your photos, image data, and filenames never leave your device.</li>
+      <li><strong>EXIF privacy:</strong> Newly generated output files are encoded cleanly without copying original EXIF sensitive data (such as GPS capture location, camera serial numbers, or device models).</li>
+    </ul>
+
+    <h2>2. Local App Data Storage</h2>
+    <p>Pipit stores minimal configuration data locally on your device to enable normal application functions:</p>
+    <ul>
+      <li><strong>Recent export history:</strong> Recent export records (file name, output dimensions, file size, and timestamp) are stored locally in private application storage to let you view, reuse, or share your recent results. You can clear this history at any time from Settings.</li>
+      <li><strong>User presets:</strong> Custom presets saved in Pipit Pro are stored locally on your device and can be deleted individually.</li>
+      <li><strong>Temporary cache:</strong> Temporary files generated during preview creation are kept in the app's private cache directory and automatically managed within budget constraints. You can manually purge this cache in Settings.</li>
+      <li><strong>Output preferences:</strong> Custom folder selections configured via Android's Storage Access Framework (SAF).</li>
+    </ul>
+
+    <h2>3. In-App Purchases (Google Play Billing)</h2>
+    <p>
+      Pipit offers an optional one-time Pro upgrade using the official Google Play Billing library.
+    </p>
+    <ul>
+      <li>All financial transactions, credit card information, and billing details are processed directly and securely by Google Play. Pipit does not collect, access, or store any payment or bank credentials.</li>
+      <li>Pipit only receives an anonymous purchase token to verify and unlock your Pro features (such as batch processing, unlimited custom presets, and ad-free experience).</li>
+    </ul>
+
+    <h2>4. Advertising and User Consent</h2>
+    <p>
+      The free version of Pipit may display banner advertisements served by Google Mobile Ads (AdMob).
+    </p>
+    <ul>
+      <li><strong>Ad-Free in Pro:</strong> Upgrading to Pipit Pro completely disables all advertising SDK requests and displays no ads.</li>
+      <li><strong>Google User Messaging Platform (UMP):</strong> In jurisdictions where required by law (such as the European Economic Area, the UK, and Switzerland), Pipit presents Google's certified consent dialog. You can manage or revoke your advertising consent choices at any time from Settings under "Ad privacy".</li>
+      <li>Google AdMob and its advertising partners may collect device identifiers, IP addresses, and diagnostic information in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>5. Android System Permissions</h2>
+    <p>Pipit adheres to the principle of least privilege and does not request broad storage permissions:</p>
+    <ul>
+      <li><strong>Photo & Document Access:</strong> Pipit uses Android's modern photo picker and Storage Access Framework. It never requests full read access to your photo gallery or all files.</li>
+      <li><strong>Notifications (Android 13+):</strong> Used strictly to display a background progress notification when you initiate a batch processing task. You can disable this permission in system settings.</li>
+      <li><strong>Foreground Service:</strong> Used solely to ensure that long-running user-initiated batch compression tasks are not interrupted by the system while processing.</li>
+      <li><strong>Internet Permission:</strong> Required strictly for Google Play Billing verification and Google AdMob banner ads in the free version.</li>
+    </ul>
+
+    <h2>6. Data Retention and Deletion</h2>
+    <p>
+      Because Pipit does not maintain user accounts or cloud databases, all user data remains on your physical device. You retain full control over your data:
+    </p>
+    <ul>
+      <li>You can clear your export history and temporary cache directly inside Pipit's Settings.</li>
+      <li>Saved images stored in your device's Pictures or custom folders can be managed and deleted using your standard gallery or file manager app.</li>
+      <li>Uninstalling Pipit deletes all local application data, caches, and custom presets stored in private app storage.</li>
+    </ul>
+
+    <h2>7. Children's Privacy</h2>
+    <p>
+      Pipit is a general-utility image tool and is not directed to children under the age of 13. We do not knowingly collect personal information from children.
+    </p>
+
+    <h2>8. Changes to this Privacy Policy</h2>
+    <p>
+      We may update our Privacy Policy from time to time to reflect changes in functionality or legal requirements. Any modifications will be posted to this page with an updated effective date.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <p>
+      If you have questions, feedback, or concerns regarding this Privacy Policy or your data, please contact us by email:
+    </p>
+    <p>
+      <strong>Email:</strong> <a href="mailto:tamariskx@gmail.com">tamariskx@gmail.com</a><br>
+      <strong>Website:</strong> <a href="https://harleyxu-xhl.github.io/pipit-website/privacy.html">https://harleyxu-xhl.github.io/pipit-website/privacy.html</a>
+    </p>
+
+    <footer>
+      &copy; 2026 Pipit. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
