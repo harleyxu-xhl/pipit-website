@@ -122,7 +122,7 @@
       <div class="badge">Pipit · Image Resizer</div>
       <h1>Privacy Policy</h1>
       <div class="meta">
-        Last updated: September 20, 2026 · Effective date: September 20, 2026
+        Last updated: September 25, 2026 · Effective date: September 25, 2026
       </div>
     </header>
 
@@ -139,7 +139,7 @@
     </p>
     <ul>
       <li><strong>On-device processing:</strong> Image decoding, resizing, compression algorithms, and format encoding run locally on your device's processor and memory.</li>
-      <li><strong>No photo uploads:</strong> Your photos, image data, and filenames never leave your device.</li>
+      <li><strong>No Pipit photo uploads:</strong> Pipit does not upload your photos, image data, or filenames to an application server. If you choose to share an output with another app, that app handles the shared file under its own practices.</li>
       <li><strong>EXIF privacy:</strong> Newly generated output files are encoded cleanly without copying original EXIF sensitive data (such as GPS capture location, camera serial numbers, or device models).</li>
     </ul>
 
@@ -147,7 +147,7 @@
     <p>Pipit stores minimal configuration data locally on your device to enable normal application functions:</p>
     <ul>
       <li><strong>Recent export history:</strong> Recent export records (file name, output dimensions, file size, and timestamp) are stored locally in private application storage to let you view, reuse, or share your recent results. You can clear this history at any time from Settings.</li>
-      <li><strong>User presets:</strong> Custom presets saved in Pipit Pro are stored locally on your device and can be deleted individually.</li>
+      <li><strong>User presets:</strong> Up to 20 custom presets saved in Pipit Pro are stored locally on your device and can be deleted individually.</li>
       <li><strong>Temporary cache:</strong> Temporary files generated during preview creation are kept in the app's private cache directory and automatically managed within budget constraints. You can manually purge this cache in Settings.</li>
       <li><strong>Output preferences:</strong> Custom folder selections configured via Android's Storage Access Framework (SAF).</li>
     </ul>
@@ -158,7 +158,7 @@
     </p>
     <ul>
       <li>All financial transactions, credit card information, and billing details are processed directly and securely by Google Play. Pipit does not collect, access, or store any payment or bank credentials.</li>
-      <li>Pipit only receives an anonymous purchase token to verify and unlock your Pro features (such as batch processing, unlimited custom presets, and ad-free experience).</li>
+      <li>Pipit receives purchase status and a purchase token from Google Play to unlock your Pro features, including batch processing and up to 20 custom presets. When ads are enabled, Pro also removes them.</li>
     </ul>
 
     <h2>4. Advertising and User Consent</h2>
@@ -167,7 +167,7 @@
     </p>
     <ul>
       <li><strong>Ad-Free in Pro:</strong> Upgrading to Pipit Pro completely disables all advertising SDK requests and displays no ads.</li>
-      <li><strong>Google User Messaging Platform (UMP):</strong> In jurisdictions where required by law (such as the European Economic Area, the UK, and Switzerland), Pipit presents Google's certified consent dialog. You can manage or revoke your advertising consent choices at any time from Settings under "Ad privacy".</li>
+      <li><strong>Google User Messaging Platform (UMP):</strong> When advertising is enabled, Pipit uses UMP to present a consent dialog where required. If privacy options are required, you can revisit them from Settings under "Ad privacy". The current closed-test release does not request ads.</li>
       <li>Google AdMob and its advertising partners may collect device identifiers, IP addresses, and diagnostic information in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</li>
     </ul>
 
@@ -176,18 +176,18 @@
     <ul>
       <li><strong>Photo & Document Access:</strong> Pipit uses Android's modern photo picker and Storage Access Framework. It never requests full read access to your photo gallery or all files.</li>
       <li><strong>Notifications (Android 13+):</strong> Used strictly to display a background progress notification when you initiate a batch processing task. You can disable this permission in system settings.</li>
-      <li><strong>Foreground Service:</strong> Used solely to ensure that long-running user-initiated batch compression tasks are not interrupted by the system while processing.</li>
-      <li><strong>Internet Permission:</strong> Required strictly for Google Play Billing verification and Google AdMob banner ads in the free version.</li>
+      <li><strong>Foreground Service:</strong> Used to keep user-initiated batch image processing running with a progress notification while Android permits it.</li>
+      <li><strong>Internet Permission:</strong> Supports Google Play Billing and, when enabled, advertising and consent services.</li>
     </ul>
 
     <h2>6. Data Retention and Deletion</h2>
     <p>
-      Because Pipit does not maintain user accounts or cloud databases, all user data remains on your physical device. You retain full control over your data:
+      Pipit does not maintain user accounts or an application cloud database. App settings and history are stored on your device, subject to Android backup and device-transfer settings. You can manage this data as follows:
     </p>
     <ul>
       <li>You can clear your export history and temporary cache directly inside Pipit's Settings.</li>
       <li>Saved images stored in your device's Pictures or custom folders can be managed and deleted using your standard gallery or file manager app.</li>
-      <li>Uninstalling Pipit deletes all local application data, caches, and custom presets stored in private app storage.</li>
+      <li>Uninstalling Pipit removes its private data from that device. Some settings or presets may remain in an Android backup or transfer and return after reinstalling. Saved images in shared folders remain until you delete them.</li>
     </ul>
 
     <h2>7. Children's Privacy</h2>
